@@ -1,7 +1,7 @@
 {
-  "name": "peertube-plugin-hello-world",
+  "name": "peertube-plugin-neo-login",
   "version": "0.0.18",
-  "description": "Hello world PeerTube plugin example",
+  "description": "NYO plugin for logging in",
   "engine": {
     "peertube": ">=2.2.0"
   },
@@ -10,7 +10,7 @@
     "plugin"
   ],
   "homepage": "https://framagit.org/framasoft/peertube/official-plugins/tree/master/peertube-plugin-hello-world",
-  "author": "Chocobozzz",
+  "author": "bartwr",
   "bugs": "https://framagit.org/framasoft/peertube/official-plugins/issues",
   "library": "./main.js",
   "staticDirs": {
