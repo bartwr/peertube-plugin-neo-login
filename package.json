@@ -1,0 +1,44 @@
+{
+  "name": "peertube-plugin-hello-world",
+  "version": "0.0.18",
+  "description": "Hello world PeerTube plugin example",
+  "engine": {
+    "peertube": ">=2.2.0"
+  },
+  "keywords": [
+    "peertube",
+    "plugin"
+  ],
+  "homepage": "https://framagit.org/framasoft/peertube/official-plugins/tree/master/peertube-plugin-hello-world",
+  "author": "Chocobozzz",
+  "bugs": "https://framagit.org/framasoft/peertube/official-plugins/issues",
+  "library": "./main.js",
+  "staticDirs": {
+    "images": "public/images"
+  },
+  "css": [
+    "assets/style1.css",
+    "assets/style2.css"
+  ],
+  "clientScripts": [
+    {
+      "script": "client/common-client-plugin.js",
+      "scopes": [ "common" ]
+    },
+    {
+      "script": "client/video-watch-client-plugin.js",
+      "scopes": [ "video-watch" ]
+    },
+    {
+      "script": "client/search-client-plugin.js",
+      "scopes": [ "search" ]
+    },
+    {
+      "script": "client/login-client-plugin.js",
+      "scopes": [ "login" ]
+    }
+  ],
+  "translations": {
+    "fr-FR": "./languages/fr.json"
+  }
+}
