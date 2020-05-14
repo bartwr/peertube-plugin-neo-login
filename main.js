@@ -12,10 +12,15 @@ async function register ({
 }) {
   const defaultAdmin = 'PeerTube admin'
 
-  registerHook({
-    target: 'action:application.listening',
-    handler: () => displayHelloWorld(settingsManager, defaultAdmin)
-  })
+  // registerHook({
+  //   target: 'action:application.listening',
+  //   handler: () => displayHelloWorld(settingsManager, defaultAdmin)
+  // })
+
+  // registerHook({
+  //   target: 'action:video-watch.player.loaded',
+  //   handler: () => doStuffWithPlayer()
+  // })
 
   // registerHook({
   //   target: 'unknown-hook',
@@ -119,3 +124,7 @@ async function displayHelloWorld (settingsManager, defaultAdmin) {
 
   console.log('hello world ' + value)
 }
+
+// function doStuffWithPlayer () {
+//   console.log('where are you, player?')
+// }
